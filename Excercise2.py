@@ -14,3 +14,25 @@ def mysum(*args):
 print(mysum(1,7,5,7,4,3))
 print(mysum(1,7,4,3))
 print(mysum(1,7,5,7,4))
+
+
+
+
+#Beyond the excercise
+def mysum(lst,n):
+    total =0
+    for i in lst:
+        total=total+i
+    return total+n
+
+print(mysum([1,2,3], 4))
+
+def mysum(lst):
+    total =0
+    cnt=0
+    for i in lst:
+        total=total+i
+        cnt = cnt + 1
+    return total/cnt
+
+print(mysum([1,2,3]))
