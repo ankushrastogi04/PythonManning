@@ -4,11 +4,13 @@
 # the tuple (numbers, in this case) and iterate over each element with either a for loop
 # or a list comprehension
 
-def mysum(args):
+
+def mysum(*args):
     total =0
     for i in [*args]:
         total=total+i
     return total
 
-args=[1,7,5,7,4,3,]
-print(mysum(args))
+print(mysum(1,7,5,7,4,3))
+print(mysum(1,7,4,3))
+print(mysum(1,7,5,7,4))
